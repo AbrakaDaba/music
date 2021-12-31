@@ -11,3 +11,57 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: rgba(0, 0, 0, 1);
+  background-image: url("./pngegg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100vh;
+}
+
+.header {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: deepskyblue;
+  text-shadow: 1px 1px 20px deeppink;
+  border-bottom: 1px solid deeppink;
+  box-shadow: 0px 1px 24px deepskyblue;
+}
+
+header h1 {
+  padding: 40px;
+}
+
+.music {
+  color: rgb(232, 232, 232);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: auto;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.music__box {
+  margin: 20px;
+}
+
+iframe{
+  box-shadow: 0 0 24px deepskyblue;
+  opacity: 1;
+  transition: transform .2s ease;
+}
+
+iframe:hover{
+  opacity: .8;
+  transform: scale(1.05);
+}

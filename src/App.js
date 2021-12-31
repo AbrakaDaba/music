@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import { data } from "./data";
+import MusicVideo from "./MusicVideo";
+import Header from "./Header";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header/>
+      <div className="music">
+        {
+          data.map((el) => {
+            return <MusicVideo key={el.id} el={el} />
+          }
+        )}
+      </div>
+    </>
   );
 }
 
