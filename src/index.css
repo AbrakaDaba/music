@@ -20,18 +20,17 @@ code {
 
 
 body {
-  background-color: rgba(0, 0, 0, 1);
-  background-image: url("./pngegg.jpeg");
+  background-color: rgb(0 0 0);
+  background-image: url("./bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
-  height: 100vh;
+  background-position: center; 
 }
 
-.header {
+.header {  
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.85);
-  color: deepskyblue;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #9afeff;
   text-shadow: 1px 1px 20px deeppink;
   border-bottom: 1px solid deeppink;
   box-shadow: 0px 1px 24px deepskyblue;
@@ -52,16 +51,44 @@ header h1 {
 }
 
 .music__box {
+  width: 100%;
   margin: 20px;
-}
-
-iframe{
-  box-shadow: 0 0 24px deepskyblue;
+  border-radius: 10px; 
   opacity: 1;
   transition: transform .2s ease;
+  position: relative;  
+  overflow: hidden;
+  border: 1px solid white
+}
+@media screen and (min-width: 768px){
+  .music__box {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1200px){
+  .music__box {
+    width: 30%;
+  }
 }
 
-iframe:hover{
+.music__box::after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+
+
+.music__box:hover {
   opacity: .8;
   transform: scale(1.05);
+}
+
+.music__box iframe,
+.music__box object,
+.music__box embed {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0;
+  width: 100% !important;
+  height: 100%;
 }

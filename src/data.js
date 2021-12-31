@@ -1,10 +1,10 @@
     export const data = [
         {
             id:1,
-            song: "Turn The Page",
-            artist: "Bob Seger",
-            original:"Bob Seger",
-            src:"https://www.youtube.com/embed/GONmFCkCGCc"
+            song: "You Shook Me All Night Long (Official Video)",
+            artist: "AC/DC",
+            original:"AC/DC",
+            src:"https://www.youtube.com/embed/Lo2qQmj0_h4"
         },
         {
             id:2,
@@ -71,10 +71,17 @@
         },
         {
             id:11,
-            song: "You Shook Me All Night Long (Official Video)",
-            artist: "AC/DC",
+            song: "Sultans of Swing",
+            artist: "Dire Straits",
             original:"AC/DC",
-            src:"https://www.youtube.com/embed/Lo2qQmj0_h4"
+            src:"https://www.youtube.com/embed/0fAQhSRLQnM"
+        },
+        {
+            id:12,
+            song: "Deda Mraz je svorc",
+            artist: "Kralj Cacka",
+            original:"Kralj Cacka",
+            src:"https://www.youtube.com/embed/0rB8XNTxkas"
         },
     ]
   
